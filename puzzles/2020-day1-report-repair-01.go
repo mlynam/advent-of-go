@@ -10,7 +10,7 @@ import (
 type reportRepairWithTwo struct{}
 
 func (r *reportRepairWithTwo) Solve(puzzle *shared.Puzzle) {
-	shared := ReportRepair{}
+	shared := reportRepair{}
 	input, err := shared.loadInput(puzzle.InputFile())
 	if err != nil {
 		return

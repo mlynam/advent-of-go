@@ -8,9 +8,9 @@ import (
 	"strings"
 )
 
-type ReportRepair struct{}
+type reportRepair struct{}
 
-func (solver *ReportRepair) loadInput(file *string) ([]int, error) {
+func (solver *reportRepair) loadInput(file *string) ([]int, error) {
 	bytes, err := ioutil.ReadFile(*file)
 	if err != nil {
 		fmt.Println(err)
