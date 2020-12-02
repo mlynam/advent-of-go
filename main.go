@@ -8,8 +8,10 @@ import (
 )
 
 func main() {
+	invalidInputErr := "expected command like\n\t$ advent-of-go 2020-day2-password-philosophy-02 -inputFile .\\inputs\\day2input"
+
 	if len(os.Args) < 2 {
-		fmt.Println("invalid input")
+		fmt.Println(invalidInputErr)
 		return
 	}
 
@@ -31,6 +33,6 @@ func main() {
 	case passwordPhilosophyPartTwo.Name():
 		passwordPhilosophyPartTwo.Solve()
 	default:
-		fmt.Println("expected command like '2020/day1' -puzzle=sum2020")
+		fmt.Println(invalidInputErr)
 	}
 }
