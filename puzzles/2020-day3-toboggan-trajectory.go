@@ -15,14 +15,13 @@ func (*tobogganTrajectory) Solve(puzzle *shared.Puzzle) {
 		return
 	}
 
-	rowCount := len(rows)
 	var (
 		x int
 		y int
 	)
 
 	treeCount := 0
-	for y = 0; y < rowCount; y += solver.my {
+	for y = 0; y < len(rows); y += solver.my {
 		row := rows[y]
 		if row[x%len(row)] {
 			treeCount++
@@ -37,5 +36,5 @@ func (*tobogganTrajectory) Solve(puzzle *shared.Puzzle) {
 // NewTobogganTrajectorySolver solves the toboggan trajectory puzzle
 func NewTobogganTrajectorySolver(mx int, my int) *shared.Puzzle {
 	solver := tobogganTrajectory{mx: mx, my: my}
-	return shared.NewPuzzle("2020-day3-toboggan-trajectory-01", &solver)
+	return shared.NewPuzzle("2020-day3-toboggan-trajectory", &solver)
 }
