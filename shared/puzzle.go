@@ -48,3 +48,8 @@ func (puzzle *Puzzle) Solve() {
 func (puzzle *Puzzle) InputFile() *string {
 	return puzzle.inputFile
 }
+
+// Solver for the puzzle
+func (puzzle *Puzzle) Solver() Solveable {
+	return puzzle.solver
+}

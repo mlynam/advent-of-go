@@ -32,6 +32,14 @@ func main() {
 		break
 	case passwordPhilosophyPartTwo.Name():
 		passwordPhilosophyPartTwo.Solve()
+	case "2020-day3-toboggan-trajectory-01":
+		puzzles.NewTobogganTrajectorySolver(3, 1).Solve()
+	case "2020-day3-toboggan-trajectory-02":
+		puzzles.NewTobogganTrajectorySolver(1, 1).Solve()
+		puzzles.NewTobogganTrajectorySolver(3, 1).Solve()
+		puzzles.NewTobogganTrajectorySolver(5, 1).Solve()
+		puzzles.NewTobogganTrajectorySolver(7, 1).Solve()
+		puzzles.NewTobogganTrajectorySolver(1, 2).Solve()
 	default:
 		fmt.Println(invalidInputErr)
 	}

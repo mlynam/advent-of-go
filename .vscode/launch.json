@@ -11,7 +11,7 @@
       "mode": "auto",
       "program": "${fileDirname}",
       "env": {},
-      "args": ["2020-day2-password-philosophy-01", "-inputFile", "./inputs/day2input"]
+      "args": ["2020-day3-toboggan-trajectory-02", "-inputFile", "./inputs/day3input"]
     }
   ]
 }
