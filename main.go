@@ -40,6 +40,10 @@ func main() {
 		puzzles.NewTobogganTrajectorySolver(5, 1).Solve()
 		puzzles.NewTobogganTrajectorySolver(7, 1).Solve()
 		puzzles.NewTobogganTrajectorySolver(1, 2).Solve()
+	case "2020-day4-passport-processing-01":
+		puzzles.NewPassportProcessingSolver(false).Solve()
+	case "2020-day4-passport-processing-02":
+		puzzles.NewPassportProcessingSolver(true).Solve()
 	default:
 		fmt.Println(invalidInputErr)
 	}

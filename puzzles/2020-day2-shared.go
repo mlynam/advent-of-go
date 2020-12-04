@@ -25,10 +25,10 @@ func (*passwordPhilosophy) loadPasswords(inputFile *string) ([]passwordMetadata,
 		return nil, err
 	}
 
-	lineStructure := regexp.MustCompile(`^([0-9]+)-([0-9]+) ([a-z]): ([a-z]+)$`)
 	reader := strings.NewReader(string(bytes))
 	scanner := bufio.NewScanner(reader)
 	scanner.Split(bufio.ScanLines)
+	lineStructure := regexp.MustCompile(`^([0-9]+)-([0-9]+) ([a-z]): ([a-z]+)$`)
 
 	var metadatas []passwordMetadata
 
